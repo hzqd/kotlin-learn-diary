@@ -101,6 +101,11 @@ fun 函数名（参数名：参数类型）：返回值类型{
 //递归、阶乘：
     var number = BigInteger("100")	//计算100的阶乘
     println(fact(number))
+/*尾递归优化：
+	累加：
+*/
+    var result = 0
+    println(ollAdd(10,result))
 /*函数及函数表达式：*/
     var results1 = sum(3,5) 	//功能模块sum在第234行定义
     println(results1)
@@ -235,4 +240,11 @@ fun sum(x:Int,y:Int):Int=x+y
 //递归、阶乘：
 fun fact(number:BigInteger):BigInteger{
     if(number==BigInteger.ONE) return BigInteger.ONE else return number*fact(number-BigInteger.ONE)
+}
+tailrec fun ollAdd(nu:Int,result:Int):Int{
+    println("计算机进行第${nu}次运算，结果=${result}")
+    if(nu==0)
+        return 1
+    else
+        return ollAdd(nu-1,result+nu)
 }
