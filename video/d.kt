@@ -1,0 +1,31 @@
+//程序员B洗衣服的方法：
+fun main(args: Array<String>) {
+    var washMachine = WashMachine(module="小天鹅",size=12)
+//未关门测试：
+    washMachine.openDoor()
+    println("未关门测试")
+    washMachine.start()
+//未选择模式：
+    washMachine.openDoor()
+    washMachine.closeDoor()
+    println("未选择模式")
+    washMachine.start()
+//洗内内：
+    washMachine.openDoor()
+    println("小华华把内裤放进去了")
+    washMachine.closeDoor()
+    washMachine.selectMode(mode=1)
+    washMachine.start()
+//洗牛仔：
+    washMachine.openDoor()
+    println("小华华把牛仔裤放进去了")
+    washMachine.closeDoor()
+    washMachine.selectMode(mode=3)
+    washMachine.start()
+//洗睡衣：
+    washMachine.openDoor()
+    println("小华华把睡衣放进去了")
+    washMachine.closeDoor()
+    washMachine.selectMode(mode=2)
+    washMachine.start()
+}
