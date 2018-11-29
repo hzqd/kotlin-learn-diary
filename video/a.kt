@@ -107,7 +107,7 @@ fun 函数名（参数名：参数类型）：返回值类型{
     var result = 0
     println(ollAdd(10,result))
 /*函数及函数表达式：*/
-    var results1 = sum(3,5) 	//功能模块sum在第234行定义
+    var results1 = sum(3,5) 	//功能模块sum在第239行定义
     println(results1)
     var i = {x:Int,y:Int -> x+y}
     var results2 = i(3,5)
