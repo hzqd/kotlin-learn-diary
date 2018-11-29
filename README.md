@@ -1,6 +1,8 @@
 # kotlin-learn-diary
-## include video and book
+## include video, book and item
 ### Video
-This file include the code which I watch the video
+This directory includes the code which I watch the video
 ### Book
-This file include the code which I watch the Book
+This directory includes the code which I read the book
+### item
+This directory contains my practice items
