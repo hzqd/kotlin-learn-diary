@@ -1,0 +1,16 @@
+fun main(args: Array<String>) {
+    var array = intArrayOf(1,2,3,4,5,6,7)
+    for(i in array) print(i)
+    println()
+    for(i:Int in array) print(i)
+    println()
+    for(i in 0..5) print(i)
+    println()
+    for(i in 0 until 5) print(i)
+    println()
+    for(i in 0 until 5 step 2)print(i)
+    println()
+    for(i in 5 downTo 0)print(i)
+    println()
+    for(i in 5 downTo 0 step 2) print(i)
+}
