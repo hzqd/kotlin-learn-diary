@@ -8,3 +8,13 @@
 输出样例：
   5 6
 */
+import java.util.Scanner
+fun main(args: Array<String>) {
+        val sc = Scanner(System.`in`)
+        val a = sc.nextInt()
+        val inch: Int   //英尺
+        var foot = (12 * a / 30.48).toInt()
+        inch = foot / 12
+        foot = foot % 12
+        println(inch.toString() + " " + foot)
+}
