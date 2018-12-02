@@ -8,6 +8,7 @@ Hello World   Here I Come
 输出样例：
 Come I Here World Hello
 */
+//部分正确：
 import java.util.Scanner
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
