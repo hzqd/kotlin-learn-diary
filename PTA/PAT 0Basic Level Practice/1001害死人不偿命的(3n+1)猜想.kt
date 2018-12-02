@@ -10,3 +10,21 @@
 输出样例：
   5
 */
+import java.util.Scanner
+fun main(args: Array<String>) {
+    val `in` = Scanner(System.`in`)
+    var num = `in`.nextInt()
+    var count = 0
+    if (num <= 1000) {
+        while (num != 1) {
+            if (num % 2 == 0) {
+                num = num / 2
+                count++
+            } else {
+                num = (num * 3 + 1) / 2
+                count++
+            }
+        }
+    }
+    print(count)
+}
