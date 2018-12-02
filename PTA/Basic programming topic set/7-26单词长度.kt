@@ -9,6 +9,7 @@ It's great to see you here.
 输出样例：
 4 5 2 3 3 4
 */
+//部分正确：
 import java.util.Scanner
 fun main(args: Array<String>) {
     val `in` = Scanner(System.`in`)
