@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     var person1 = Man("工藤新一")
     var person2 = Woman("灰原哀")
     var person3 = Man("Incubator")
-    var person4 = Woman("まとか")
+    var person4 = Woman("まどか")
     var person5 = Man("小华华")
 //请各位大佬进集合：
     var house   = listOf<Human>(person1,person2,person3,person4,person5)
