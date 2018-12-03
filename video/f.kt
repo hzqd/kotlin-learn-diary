@@ -1,4 +1,4 @@
-//生成纯色图片：
+//图像处理：
 import java.awt.image.BufferedImage
 import java.io.File
 import javax.imageio.ImageIO
@@ -6,9 +6,9 @@ import javax.imageio.ImageIO
 fun main(args: Array<String>) {
     var image = BufferedImage(1000,1000,BufferedImage.TYPE_INT_RGB)
     var w = 0 .. 999
-    var h = 0 .. 999
-    image.setRGB(0,0,0xff0000)
-
+    var h = 0 .. 999        //下面这行代码是标记某一个点的颜色：
+    image.setRGB(500,500,0xff0000) ; ImageIO.write(image,"bmp", File("a.bmp"))
+//以RGB色彩模式生成纯色图片：
     image.apply { for(i in w) for(j in h) setRGB(i,j,0x000000) }
     ImageIO.write(image,"bmp", File("black.bmp"))
 
