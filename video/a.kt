@@ -107,7 +107,7 @@ fun 函数名（参数名：参数类型）：返回值类型{
     var result = 0
     println(ollAdd(10,result))
 /*函数及函数表达式：*/
-    var results1 = sum(3,5) 	//功能模块sum在第239行定义
+    var results1 = sum(3,5) 	//功能模块sum在第242行定义
     println(results1)
     var i = {x:Int,y:Int -> x+y}
     var results2 = i(3,5)
@@ -115,6 +115,9 @@ fun 函数名（参数名：参数类型）：返回值类型{
     var j:(Int,Int)->Int = {x,y->x+y}
     var results3 = j(3,5)
     println(results3)
+//闭包：
+    var names = listOf("小明","Tom","まどか")
+    names.forEach { println(it) }	
 /*list&map：*/
     var list = listOf("买鸡蛋","买大米","买钢笔","买冰淇淋")
     for((k,l)in list.withIndex()){
