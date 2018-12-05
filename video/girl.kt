@@ -30,3 +30,21 @@ fun filterGirlsByAddress(address: String){
     for(a in 非诚勿扰数据库) if(a.address==address) 某个地区的妹子.add(a)
         for(a in 某个地区的妹子) println("${a.address} ${a.age}岁的美女 ${a.name}")
 }
+fun filterGirlsByAge(age: Int){
+    var 某个年龄以下的妹子=ArrayList<girl>()
+    for(b in 非诚勿扰数据库) if(b.age<age) 某个年龄以下的妹子.add(b)
+    for(b in 某个年龄以下的妹子) println("${b.address} ${b.age}岁的美女 ${b.name}")
+}
+fun filterGirlsByAddressHeightAge(address: String, height: Int, age: Int, flag: Boolean){
+    var 符合条件的妹子 = ArrayList<girl>()
+    if (flag) {
+        for (c in 非诚勿扰数据库)
+            if ((c.age < age) and (c.address == address) and (c.height > height)) {
+                符合条件的妹子.add(c) }
+    }else
+        for(c in 非诚勿扰数据库)
+            if((c.age>age)and(c.address==address)and(c.height>height))
+                符合条件的妹子.add(c)
+    for(c in 符合条件的妹子)
+        println("${c.address} ${c.age}岁的美女 ${c.name} 身高${c.height}cm")
+}
