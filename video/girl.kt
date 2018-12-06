@@ -51,5 +51,5 @@ fun filterGirlsByAddressHeightAge(address: String, height: Int, age: Int, flag: 
 }
 //高阶函数と领域特定语言DSL：
 infix fun List<girl>.查找嫩妹子年龄小于(age: Int){ filter { it.age<age }.forEach(::println) }
-infix fun List<girl>.查找嫩妹子年龄大于(age: Int){ filter { it.age>age }.forEach(::println) }
+infix fun List<girl>.查找熟妹子年龄大于(age: Int){ filter { it.age>age }.forEach(::println) }
 infix fun List<girl>.查找妹子来自(address: String){ filter { it.address==address }.forEach(::println) }
