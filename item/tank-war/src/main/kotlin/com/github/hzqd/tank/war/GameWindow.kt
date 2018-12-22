@@ -22,16 +22,13 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
         val lines = file.readLines()
         //循环遍历：
         var lineNum = 0
-        lines.forEach {
-            line ->
-            var columnNum = 0
-            line.toCharArray().forEach {
-                column ->
-                when (column) {
-                    '砖' -> views.add(Wall(columnNum * Config.block, lineNum * Config.block))
-                    '铁' -> views.add(Steel(columnNum * Config.block, lineNum * Config.block))
-                    '草' -> views.add(Grass(columnNum * Config.block, lineNum * Config.block))
-                    '水' -> views.add(Water(columnNum * Config.block, lineNum * Config.block))
+        lines.forEach { line -> var columnNum = 0
+            line.toCharArray().forEach { column -> when (column) {
+                '砖' -> views.add(Wall (columnNum * Config.block, lineNum * Config.block))
+                '铁' -> views.add(Steel(columnNum * Config.block, lineNum * Config.block))
+                '草' -> views.add(Grass(columnNum * Config.block, lineNum * Config.block))
+                '水' -> views.add(Water(columnNum * Config.block, lineNum * Config.block))
+                '敌' -> views.add(Enemy(columnNum * Config.block, lineNum * Config.block))
                 }
                 columnNum++
             }
@@ -71,20 +68,11 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
         (2)找到阻塞的物体：
         (3)遍历集合 -> 是否发生碰撞：
          */
-        views.filter {
-            it is Movable
-        }.forEach {
-            move ->
-            move as Movable //move和block是否碰撞：
+        views.filter { it is Movable }.forEach { move -> move as Movable //move和block是否碰撞：
             var badDirection: Direction? = null
             var badBlock: Blockable? = null
-            views.filter {
-                it is Blockable
-            }.forEach blockTag@{
-                block ->
-                block as Blockable
-                //获得碰撞的方向：
-                val direction = move.willCollision(block)
+            views.filter { it is Blockable }.forEach blockTag@{ block -> block as Blockable
+                val direction = move.willCollision(block)   //获得碰撞的方向
                 //发现碰撞，跳出当前循环：
                 direction?.let {
                     badDirection = direction
@@ -92,45 +80,23 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
                     return@blockTag
                 }
             }
-            //找到和move碰撞的block与碰撞的方向
-            //通知可移动的物体，会在哪个方向碰撞。
+            //找到和move碰撞的block与碰撞的方向 ; 通知可移动的物体，会在哪个方向碰撞。
             move.notifyCollision(badDirection, badBlock)
         }
         /**自动移动：*/
-        views.filter {
-            it is AutoMovable
-        }.forEach {
-            (it as AutoMovable).autoMove()
-        }
+        views.filter { it is AutoMovable }.forEach { (it as AutoMovable).autoMove() }
         /**自动销毁：*/  //forEach中判断是否自动销毁：
-        views.filter {
-            it is Destroyable
-        }.forEach {
-            if ((it as Destroyable).isDestroyed()) {
-                views.remove(it)
-            }
-        }
+        views.filter { it is Destroyable }.forEach { if ((it as Destroyable).isDestroyed()) { views.remove(it) } }
         /**检测攻击体与受攻体是否碰撞：*/
         //过滤有攻击和受攻能力的物体：
-        views.filter {
-            it is Attackable
-        }.forEach {
-            attack ->
-            attack as Attackable
-            views.filter {
-                it is Sufferable
-            }.forEach sufferTag@{
-                suffer ->
-                suffer as Sufferable
+        views.filter { it is Attackable }.forEach { attack -> attack as Attackable
+            views.filter { it is Sufferable }.forEach sufferTag@{ suffer -> suffer as Sufferable
                 //判断是否发生碰撞：
                 if (attack.isCollision(suffer)) {
                     //产生碰撞，找到碰撞者；通知攻击者和被攻击者，产生碰撞：
                     attack.notifyAttack(suffer)
                     val sufferView = suffer.notifySuffer(attack)
-                    sufferView?.let {
-                        //显示受攻效果
-                        views.addAll(sufferView)
-                    }
+                    sufferView?.let { views.addAll(sufferView) }    //显示受攻效果
                     return@sufferTag
                 }
             }

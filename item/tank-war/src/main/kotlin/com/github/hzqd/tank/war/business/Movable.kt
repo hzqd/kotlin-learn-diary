@@ -10,7 +10,6 @@ interface Movable : View {
     val speed: Int
     //判断移动体是否和阻塞体发生碰撞：
     fun willCollision(block: Blockable): Direction?
-
     //通知碰撞：
     fun notifyCollision(direction: Direction?, block: Blockable?)
 }

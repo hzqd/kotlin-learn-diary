@@ -44,10 +44,10 @@ class Bullet(override val currentDirection: Direction, create: (width: Int, heig
     override fun autoMove() {
         //根据自己的方向改变自己的坐标：
         when (currentDirection) {
-            Direction.UP -> y -= speed
+            Direction.UP   -> y -= speed
             Direction.DOWN -> y += speed
             Direction.LEFT -> x -= speed
-            Direction.RIGHT -> x += speed
+            Direction.RIGHT-> x += speed
         }
     }
 

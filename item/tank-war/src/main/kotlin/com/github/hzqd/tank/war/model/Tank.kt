@@ -29,10 +29,10 @@ class Tank(override var x: Int, override var y: Int) : Movable {
 //        }
         //方式二：
         val imagePath = when (currentDirection) {
-            Direction.UP -> "img/p1tankU.gif"
+            Direction.UP   -> "img/p1tankU.gif"
             Direction.DOWN -> "img/p1tankD.gif"
             Direction.LEFT -> "img/p1tankL.gif"
-            Direction.RIGHT -> "img/p1tankR.gif"
+            Direction.RIGHT-> "img/p1tankR.gif"
         }
         Painter.drawImage(imagePath, x, y)
     }
@@ -48,19 +48,18 @@ class Tank(override var x: Int, override var y: Int) : Movable {
             this.currentDirection = direction
             return
         }
-        //坦克坐标的变化：
-        //根据不同的方向，改变对应的坐标：
+        //坦克坐标的变化 —— 根据不同的方向，改变对应的坐标：
         when (currentDirection) {
-            Direction.UP -> y -= speed
+            Direction.UP   -> y -= speed
             Direction.DOWN -> y += speed
             Direction.LEFT -> x -= speed
-            Direction.RIGHT -> x += speed
+            Direction.RIGHT-> x += speed
         }
         //越界判断：
         if (x < 0) x = 0
         if (x > Config.gameWidth - width) x = Config.gameWidth - width
         if (y < 0) y = 0
-        if (y > Config.gameHeight - height) y = Config.gameHeight - height
+        if (y > Config.gameHeight-height) y = Config.gameHeight-height
     }
 
     override fun willCollision(block: Blockable): Direction? {
@@ -85,13 +84,10 @@ class Tank(override var x: Int, override var y: Int) : Movable {
         return if (collision) currentDirection else null
     }
 
-    override fun notifyCollision(direction: Direction?, block: Blockable?) {
-        //TODO:接收碰撞：
-        this.badDirection = direction
-    }
+    //TODO:接收碰撞
+    override fun notifyCollision(direction: Direction?, block: Blockable?) { this.badDirection = direction }
 
     fun shot(): Bullet {
-
 //        return Bullet(currentDirection,bulletX,bulletY)
         return Bullet(currentDirection) { bulletWidth, bulletHeight ->
             val tankX = x
