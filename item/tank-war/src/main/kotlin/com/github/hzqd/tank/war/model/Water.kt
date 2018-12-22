@@ -1,10 +1,8 @@
 package com.github.hzqd.tank.war.model
-
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.Blockable
 import org.itheima.kotlin.game.core.Painter
-
-/**草坪*/
+/**水墙*/
 class Water(override val x: Int, override val y: Int) : Blockable {
     //位置：
 //    override var x = 200

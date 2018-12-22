@@ -1,8 +1,6 @@
 package com.github.hzqd.tank.war.business
-
 import com.github.hzqd.tank.war.enums.Direction
 import com.github.hzqd.tank.war.model.View
-
 /**移动的能力：*/
 interface Movable: View {
     //可移动物体存在方向和速度：

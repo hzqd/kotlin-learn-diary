@@ -1,11 +1,9 @@
 package com.github.hzqd.tank.war.model
-
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.Blockable
 import com.github.hzqd.tank.war.business.Movable
 import com.github.hzqd.tank.war.enums.Direction
 import org.itheima.kotlin.game.core.Painter
-
 /**我方坦克*/
 class Tank(override var x: Int, override var y: Int) : Movable {
 

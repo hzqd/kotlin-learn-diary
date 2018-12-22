@@ -1,8 +1,6 @@
 package com.github.hzqd.tank.war.model
-
 import com.github.hzqd.tank.war.Config
 import org.itheima.kotlin.game.core.Painter
-
 /**草坪*/
 class Grass(override val x: Int, override val y: Int) : View {
     //位置：

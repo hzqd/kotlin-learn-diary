@@ -1,5 +1,4 @@
 package com.github.hzqd.tank.war
-
 import com.github.hzqd.tank.war.business.*
 import com.github.hzqd.tank.war.enums.Direction
 import com.github.hzqd.tank.war.model.*
@@ -8,7 +7,6 @@ import javafx.scene.input.KeyEvent
 import org.itheima.kotlin.game.core.Window
 import java.io.File
 import java.util.concurrent.CopyOnWriteArrayList
-
 class GameWindow:Window("坦克大战 v0.1","img/logo.jpg",Config.gameWidth,Config.gameHeight) {
     //管理元素的集合：
     //private val views = arrayListOf<View>()
@@ -38,7 +36,6 @@ class GameWindow:Window("坦克大战 v0.1","img/logo.jpg",Config.gameWidth,Conf
         tank = Tank(Config.block * 10, Config.block * 10)
         views.add(tank)
     }
-
     override fun onDisplay() {
         //绘制图像：
 
@@ -46,7 +43,6 @@ class GameWindow:Window("坦克大战 v0.1","img/logo.jpg",Config.gameWidth,Conf
         views.forEach { it.draw() }
         //println("${views.size}")
     }
-
     override fun onKeyPressed(event: KeyEvent) {
         //用户操作时：
         when(event.code){
@@ -60,7 +56,6 @@ class GameWindow:Window("坦克大战 v0.1","img/logo.jpg",Config.gameWidth,Conf
             }
         }
     }
-
     override fun onRefresh() {
         /**业务逻辑：
         ***判断运动体和阻塞体是否发生碰撞：

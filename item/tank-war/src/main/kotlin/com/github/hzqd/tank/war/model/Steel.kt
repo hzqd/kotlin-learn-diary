@@ -1,9 +1,7 @@
 package com.github.hzqd.tank.war.model
-
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.Blockable
 import org.itheima.kotlin.game.core.Painter
-
 /**铁墙*/
 class Steel(override val x: Int, override val y: Int) : Blockable {
     //位置：
