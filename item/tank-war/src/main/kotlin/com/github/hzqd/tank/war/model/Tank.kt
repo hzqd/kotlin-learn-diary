@@ -1,20 +1,23 @@
 package com.github.hzqd.tank.war.model
+
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.Blockable
 import com.github.hzqd.tank.war.business.Movable
 import com.github.hzqd.tank.war.enums.Direction
 import org.itheima.kotlin.game.core.Painter
+
 /**我方坦克*/
 class Tank(override var x: Int, override var y: Int) : Movable {
 
-    override val width : Int = Config.block
+    override val width: Int = Config.block
     override val height: Int = Config.block
     //方向：
-    override var currentDirection:Direction = Direction.UP
+    override var currentDirection: Direction = Direction.UP
     //速度：
     override val speed = 10
     //坦克不能走的方向：
     private var badDirection: Direction? = null
+
     override fun draw() {
         //根据坦克的方向进行绘制：
 //      //方式一：
@@ -25,47 +28,51 @@ class Tank(override var x: Int, override var y: Int) : Movable {
 //            Direction.RIGHT->Painter.drawImage("img/p1tankR.gif",x,y)
 //        }
         //方式二：
-        val imagePath = when(currentDirection){
-            Direction.UP   ->"img/p1tankU.gif"
-            Direction.DOWN ->"img/p1tankD.gif"
-            Direction.LEFT ->"img/p1tankL.gif"
-            Direction.RIGHT->"img/p1tankR.gif"
+        val imagePath = when (currentDirection) {
+            Direction.UP -> "img/p1tankU.gif"
+            Direction.DOWN -> "img/p1tankD.gif"
+            Direction.LEFT -> "img/p1tankL.gif"
+            Direction.RIGHT -> "img/p1tankR.gif"
         }
         Painter.drawImage(imagePath, x, y)
     }
+
     //坦克移动：
-    fun move(direction: Direction){
+    fun move(direction: Direction) {
         //判断是否要往碰撞的方向走：
-        if (direction == badDirection){ return }
+        if (direction == badDirection) {
+            return
+        }
         //当前的方向和希望移动的方向不一致时，只做方向的改变：
-        if (this.currentDirection != direction){
-            this.currentDirection  = direction
+        if (this.currentDirection != direction) {
+            this.currentDirection = direction
             return
         }
         //坦克坐标的变化：
         //根据不同的方向，改变对应的坐标：
-        when(currentDirection){
-            Direction.UP   -> y -= speed
+        when (currentDirection) {
+            Direction.UP -> y -= speed
             Direction.DOWN -> y += speed
             Direction.LEFT -> x -= speed
-            Direction.RIGHT-> x += speed
+            Direction.RIGHT -> x += speed
         }
         //越界判断：
         if (x < 0) x = 0
         if (x > Config.gameWidth - width) x = Config.gameWidth - width
         if (y < 0) y = 0
-        if (y > Config.gameHeight-height) y = Config.gameHeight-height
+        if (y > Config.gameHeight - height) y = Config.gameHeight - height
     }
+
     override fun willCollision(block: Blockable): Direction? {
         //未来的坐标：
         var x = this.x
         var y = this.y
         //将要碰撞时做判断：
-        when(currentDirection){
-            Direction.UP   -> y -= speed
+        when (currentDirection) {
+            Direction.UP -> y -= speed
             Direction.DOWN -> y += speed
             Direction.LEFT -> x -= speed
-            Direction.RIGHT-> x += speed
+            Direction.RIGHT -> x += speed
         }
         //TODO:检测碰撞：
 //        val collision = when {
@@ -77,6 +84,7 @@ class Tank(override var x: Int, override var y: Int) : Movable {
         val collision = checkCollision(block.x, x, block.y, y, block.width, width, block.height, height)
         return if (collision) currentDirection else null
     }
+
     override fun notifyCollision(direction: Direction?, block: Blockable?) {
         //TODO:接收碰撞：
         this.badDirection = direction
@@ -85,11 +93,11 @@ class Tank(override var x: Int, override var y: Int) : Movable {
     fun shot(): Bullet {
 
 //        return Bullet(currentDirection,bulletX,bulletY)
-        return Bullet(currentDirection) { bulletWidth,bulletHeight ->
+        return Bullet(currentDirection) { bulletWidth, bulletHeight ->
             val tankX = x
             val tankY = y
             val tankWidth = width
-            val tankHeight= height
+            val tankHeight = height
             /*计算子弹真实的坐标：
                 如果坦克是向上的，计算子弹的位置
                 bulletX = tankX + (tankWidth - bulletWidth) / 2
@@ -97,7 +105,7 @@ class Tank(override var x: Int, override var y: Int) : Movable {
              */
             var bulletX = 0
             var bulletY = 0
-            when(currentDirection){
+            when (currentDirection) {
                 Direction.UP -> {
                     bulletX = tankX + (tankWidth - bulletWidth) / 2
                     bulletY = tankY - bulletHeight / 2
@@ -115,7 +123,7 @@ class Tank(override var x: Int, override var y: Int) : Movable {
                     bulletY = tankY + (tankHeight - bulletHeight) / 2
                 }
             }
-            Pair(bulletX,bulletY)
+            Pair(bulletX, bulletY)
         }
     }
 }

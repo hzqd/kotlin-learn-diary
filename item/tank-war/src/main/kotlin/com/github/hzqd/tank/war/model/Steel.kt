@@ -1,7 +1,9 @@
 package com.github.hzqd.tank.war.model
+
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.Blockable
 import org.itheima.kotlin.game.core.Painter
+
 /**铁墙*/
 class Steel(override val x: Int, override val y: Int) : Blockable {
     //位置：
@@ -9,9 +11,9 @@ class Steel(override val x: Int, override val y: Int) : Blockable {
 //    override var y = 200
     //宽高：
     override var width = Config.block
-    override var height= Config.block
+    override var height = Config.block
     //显示行为：
-    override fun draw(){
-        Painter.drawImage("img/steels.gif", x , y)
+    override fun draw() {
+        Painter.drawImage("img/steels.gif", x, y)
     }
 }
