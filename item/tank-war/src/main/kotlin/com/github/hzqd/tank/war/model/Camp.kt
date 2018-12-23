@@ -14,30 +14,32 @@ class Camp(override var x: Int, override var y: Int) : Blockable, Sufferable, De
     override var width = Config.block * 2
     override var height= Config.block + 32
     override fun draw() {
-        if (blood <= 3) {
-            width = Config.block
-            height= Config.block
-            x = (Config.gameWidth - Config.block) / 2
-            y = Config.gameHeight - Config.block
-            Painter.drawImage("img/camp.png",x,y)
-        }
-        else if (blood <= 6) {
-            Painter.drawImage("img/1/wall.gif",x,y)
-            Painter.drawImage("img/1/wall.gif",x+Config.block/2,y)
-            Painter.drawImage("img/1/wall.gif",x+Config.block,y)
-            Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y)
-            Painter.drawImage("img/1/wall.gif",x,y+Config.block/2)
-            Painter.drawImage("img/1/wall.gif",x,y+Config.block)
-            Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y+Config.block/2)
-            Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y+Config.block)
-            Painter.drawImage("img/camp.png",x+Config.block/2,y+Config.block/2)
-        }
-        else {
-            Painter.drawImage("img/1/tugai.net.20101117144551.gif",x,y)
-            Painter.drawImage("img/1/tugai.net.20101117144551.gif",x+Config.block,y)
-            Painter.drawImage("img/1/tugai.net.20101117144625.gif",x,y+Config.block/2)
-            Painter.drawImage("img/1/tugai.net.20101117144625.gif",x+Config.block+Config.block/2,y+Config.block/2)
-            Painter.drawImage("img/camp.png",x+Config.block/2,y+Config.block/2)
+        when {
+            blood <= 3 -> {
+                width = Config.block
+                height= Config.block
+                x = (Config.gameWidth - Config.block) / 2
+                y = Config.gameHeight - Config.block
+                Painter.drawImage("img/camp.png",x,y)
+            }
+            blood <= 6 -> {
+                Painter.drawImage("img/1/wall.gif",x,y)
+                Painter.drawImage("img/1/wall.gif",x+Config.block/2,y)
+                Painter.drawImage("img/1/wall.gif",x+Config.block,y)
+                Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y)
+                Painter.drawImage("img/1/wall.gif",x,y+Config.block/2)
+                Painter.drawImage("img/1/wall.gif",x,y+Config.block)
+                Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y+Config.block/2)
+                Painter.drawImage("img/1/wall.gif",x+Config.block+Config.block/2,y+Config.block)
+                Painter.drawImage("img/camp.png",x+Config.block/2,y+Config.block/2)
+            }
+            else -> {
+                Painter.drawImage("img/1/tugai.net.20101117144551.gif",x,y)
+                Painter.drawImage("img/1/tugai.net.20101117144551.gif",x+Config.block,y)
+                Painter.drawImage("img/1/tugai.net.20101117144625.gif",x,y+Config.block/2)
+                Painter.drawImage("img/1/tugai.net.20101117144625.gif",x+Config.block+Config.block/2,y+Config.block/2)
+                Painter.drawImage("img/camp.png",x+Config.block/2,y+Config.block/2)
+            }
         }
     }
 

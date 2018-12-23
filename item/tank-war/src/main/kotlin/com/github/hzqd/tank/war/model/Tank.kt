@@ -1,16 +1,14 @@
 package com.github.hzqd.tank.war.model
 
 import com.github.hzqd.tank.war.Config
-import com.github.hzqd.tank.war.business.Attackable
-import com.github.hzqd.tank.war.business.Blockable
-import com.github.hzqd.tank.war.business.Movable
-import com.github.hzqd.tank.war.business.Sufferable
+import com.github.hzqd.tank.war.business.*
 import com.github.hzqd.tank.war.enums.Direction
 import org.itheima.kotlin.game.core.Painter
 
 /**我方坦克*/
-class Tank(override var x: Int, override var y: Int) : Movable, Blockable, Sufferable {
+class Tank(override var x: Int, override var y: Int) : Movable, Blockable, Sufferable, Destroyable {
 
+    override fun isDestroyed() = blood <= -10
     override val width: Int = Config.block
     override val height: Int = Config.block
     //方向：
@@ -18,7 +16,7 @@ class Tank(override var x: Int, override var y: Int) : Movable, Blockable, Suffe
     //速度：
     override val speed = 10
     //血量：
-    override var blood = 20
+    override var blood = 0
     //坦克不能走的方向：
     private var badDirection: Direction? = null
 

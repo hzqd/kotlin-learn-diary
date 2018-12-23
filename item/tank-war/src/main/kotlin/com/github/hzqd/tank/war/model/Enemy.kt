@@ -3,6 +3,7 @@ package com.github.hzqd.tank.war.model
 import com.github.hzqd.tank.war.Config
 import com.github.hzqd.tank.war.business.*
 import com.github.hzqd.tank.war.enums.Direction
+import org.itheima.kotlin.game.core.Composer
 import org.itheima.kotlin.game.core.Painter
 import java.util.*
 
@@ -122,6 +123,7 @@ class Enemy(override var x: Int, override var y: Int) : Movable, AutoMovable, Bl
             return null
         }
         blood -= attackable.attackPower
+        Composer.play("img/hit.wav")
         return arrayOf(Blast(x,y))
     }
 
