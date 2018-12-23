@@ -37,6 +37,8 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
         //添加我方坦克：
         tank = Tank(Config.block * 10, Config.block * 10)
         views.add(tank)
+        //添加大本营：
+        views.add(Camp(Config.gameWidth/2-Config.block, Config.gameHeight-90))
     }
 
     override fun onDisplay() {
@@ -71,7 +73,7 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
         views.filter { it is Movable }.forEach { move -> move as Movable //move和block是否碰撞：
             var badDirection: Direction? = null
             var badBlock: Blockable? = null
-            views.filter { it is Blockable }.forEach blockTag@{ block -> block as Blockable
+            views.filter { (it is Blockable) and (move != it) }.forEach blockTag@{ block -> block as Blockable
                 val direction = move.willCollision(block)   //获得碰撞的方向
                 //发现碰撞，跳出当前循环：
                 direction?.let {
@@ -88,9 +90,9 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
         /**自动销毁：*/  //forEach中判断是否自动销毁：
         views.filter { it is Destroyable }.forEach { if ((it as Destroyable).isDestroyed()) { views.remove(it) } }
         /**检测攻击体与受攻体是否碰撞：*/
-        //过滤有攻击和受攻能力的物体：
+        //过滤有攻击和受攻能力的物体 且 攻击方的目标不能是自己：
         views.filter { it is Attackable }.forEach { attack -> attack as Attackable
-            views.filter { it is Sufferable }.forEach sufferTag@{ suffer -> suffer as Sufferable
+            views.filter { (it is Sufferable) and (attack.owner != it) and (attack != it) }.forEach sufferTag@{ suffer -> suffer as Sufferable
                 //判断是否发生碰撞：
                 if (attack.isCollision(suffer)) {
                     //产生碰撞，找到碰撞者；通知攻击者和被攻击者，产生碰撞：
@@ -100,6 +102,11 @@ class GameWindow : Window("坦克大战 v0.1", "img/logo.jpg", Config.gameWidth,
                     return@sufferTag
                 }
             }
+        }
+        /**检测自动射击*/
+        views.filter { it is AutoShot }.forEach { it as AutoShot
+            val shot = it.autoShot()
+            shot?.let { views.add(shot) }
         }
     }
 }

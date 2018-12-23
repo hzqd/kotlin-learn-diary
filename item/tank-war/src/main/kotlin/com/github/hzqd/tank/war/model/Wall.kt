@@ -10,7 +10,7 @@ import org.itheima.kotlin.game.core.Painter
 
 /**砖墙*/
 class Wall(override val x: Int, override val y: Int) : Blockable, Sufferable, Destroyable {
-    override var boold: Int = 3
+    override var blood: Int = 3
     //位置：
 //    override val x = 100
 //    override val y = 100
@@ -22,10 +22,10 @@ class Wall(override val x: Int, override val y: Int) : Blockable, Sufferable, De
         Painter.drawImage("img/walls.gif", x, y)
     }
 
-    override fun isDestroyed(): Boolean = boold <= 0    //砖墙生命值少于或等于零时被销毁
+    override fun isDestroyed(): Boolean = blood <= 0    //砖墙生命值少于或等于零时被销毁
 
     override fun notifySuffer(attackable: Attackable): Array<View>? {
-        boold -= attackable.attackPower      //砖墙掉血
+        blood -= attackable.attackPower      //砖墙掉血
         Composer.play("img/hit.wav")//砖墙喊疼
         return arrayOf(Blast(x,y))
     }

@@ -10,8 +10,8 @@ import com.github.hzqd.tank.war.ext.checkCollision
 import org.itheima.kotlin.game.core.Painter
 
 /**子弹*/
-class Bullet(override val currentDirection: Direction, create: (width: Int, height: Int) -> Pair<Int, Int>) : AutoMovable, Destroyable, Attackable {
-
+class Bullet(override val owner: View, override val currentDirection: Direction, create: (width: Int, height: Int) -> Pair<Int, Int>) : AutoMovable, Destroyable, Attackable, Sufferable {
+    override val blood = 0
     //给子弹一个方向，方向由坦克来决定：
     override var width: Int = Config.block
     override var height: Int = Config.block
@@ -21,10 +21,10 @@ class Bullet(override val currentDirection: Direction, create: (width: Int, heig
     override val attackPower: Int = 1
     private var isDestroyed = false
     private val imagePath = when (currentDirection) {
-        Direction.UP -> "img/bullet_up.bmp"
+        Direction.UP   -> "img/bullet_up.bmp"
         Direction.DOWN -> "img/bullet_down.bmp"
         Direction.LEFT -> "img/bullet_left.bmp"
-        Direction.RIGHT -> "img/bullet_right.bmp"
+        Direction.RIGHT-> "img/bullet_right.bmp"
     }
 
     init {
@@ -61,11 +61,9 @@ class Bullet(override val currentDirection: Direction, create: (width: Int, heig
         return false
     }
 
-    override fun isCollision(sufferable: Sufferable): Boolean {
-        return checkCollision(sufferable)
-    }
+    override fun isCollision(sufferable: Sufferable): Boolean { return checkCollision(sufferable) }
 
-    override fun notifyAttack(sufferable: Sufferable) {
-        isDestroyed = true
-    }
+    override fun notifyAttack(sufferable: Sufferable) { isDestroyed = true }
+
+    override fun notifySuffer(attackable: Attackable): Array<View>? { return arrayOf(Blast(x,y)) }
 }

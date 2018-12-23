@@ -16,7 +16,7 @@ class Blast(override val x: Int, override val y: Int) : Destroyable {
 
     override fun draw() {
         val i = index % imagePaths.size
-        Painter.drawImage(imagePaths[index], x, y)
+        Painter.drawImage(imagePaths[i], x, y)
         index++
     }
 

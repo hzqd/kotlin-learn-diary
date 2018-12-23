@@ -4,6 +4,6 @@ import com.github.hzqd.tank.war.model.View
 
 /**受攻的能力：*/
 interface Sufferable : View {
-    val boold: Int  //生命值
+    val blood: Int  //生命值
     fun notifySuffer(attackable: Attackable): Array<View>?
 }

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e62db946-132b-437a-99f3-ab6324d500ee" name="Default Changelist" comment="" />
+    <list default="true" id="e62db946-132b-437a-99f3-ab6324d500ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/tank-war_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/META-INF/tank-war_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Bullet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Bullet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -41,53 +59,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Bullet.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="120">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Grass.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Water.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="30" column="89" lean-forward="true" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+            <state relative-caret-position="128">
+              <caret line="88" column="85" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -95,26 +86,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="144">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoMovable.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Camp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="608">
+              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -123,7 +123,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -136,8 +145,8 @@
         <option value="Kotlin Object" />
         <option value="Class" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -156,31 +165,33 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/movable.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/1.map" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoMovable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Blockable.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/enums/Direction.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/ext/ViewExt.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Grass.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/View.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Water.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/Config.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoShot.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Bullet.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Camp.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="288" />
     <option name="y" value="22" />
     <option name="width" value="1330" />
@@ -208,6 +219,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.github.hzqd.tank.war" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.github.hzqd.tank.war" type="1f31426a:PackageElementNode" />
+              <item name="business" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,33 +288,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="war" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="war" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="war" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="war" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -292,39 +305,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.github.hzqd.tank.war" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="tank-war" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tank-war" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tank-war_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.github.hzqd.tank.war" type="1f31426a:PackageElementNode" />
-              <item name="business" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545487036977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545564491517" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -401,10 +385,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1044" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16488223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17130621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -413,14 +397,14 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3077778" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3077778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3288889" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32996634" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -495,56 +479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/map/1.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/business/Attackable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/enums/Direction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/GameWindow.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/business/Attackable.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/enums/Direction.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/classes/com/github/hzqd/tank/war/GameWindow.class" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Blockable.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
@@ -555,13 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -586,27 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#40#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/View.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -617,6 +531,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoMovable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Water.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -624,52 +545,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoShot.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="30" column="89" lean-forward="true" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+        <state relative-caret-position="144">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/map/1.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2928">
+          <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2328">
+          <caret line="124" column="34" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!block;n#draw#0;n#!!block;n#Enemy#0" />
+            <element signature="n#!!block;n#notifyCollision#0;n#!!block;n#Enemy#0" />
+            <element signature="n#!!block;n#rdmDirection#0;n#!!block;n#Enemy#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Sufferable.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Attackable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Wall.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Steel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Camp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Bullet.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoMovable.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Destroyable.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="168">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="128">
+          <caret line="88" column="85" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
         </state>
       </provider>
     </entry>
