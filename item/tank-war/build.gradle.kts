@@ -9,8 +9,8 @@ application {
 }
 dependencies {
     compile(kotlin("stdlib-jdk8"))
-    compile("org.openjfx","javafx-controls","11")
-    compile("com.github.shaunxiao:kotlinGameEngine:v0.1.0")
+    compile("org.openjfx","javafx-controls","11",classifier = "linux")
+    compile("com.github.shaunxiao:kotlinGameEngine:v0.0.4")
     compile("de.dynamicfiles.projects.gradle.plugins","javafx-gradle-plugin","8.8.2")
 }
 repositories {

@@ -6,6 +6,7 @@ import com.github.hzqd.tank.war.model.*
 import javafx.scene.input.KeyCode
 import javafx.scene.input.KeyEvent
 import org.itheima.kotlin.game.core.Window
+import java.awt.event.KeyEvent
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStream

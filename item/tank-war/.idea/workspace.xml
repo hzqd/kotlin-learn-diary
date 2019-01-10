@@ -2,103 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e62db946-132b-437a-99f3-ab6324d500ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/tugai.net.20101117134209.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/tugai.net.20101117144551.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/tugai.net.20101117144625.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/tugai.net.20101117145147.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/wall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/1/walls.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/enemy3D.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/enemy3L.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/enemy3R.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/enemy3U.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235303.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235357.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235418.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235441.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235754.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235819.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235843.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235923.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101117235941.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101118000029.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101118000048.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/2/tugai.net.20101118000114.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/add.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/blast8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/bomb.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/born1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/born2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/born3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/born4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/bullet_down.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/bullet_left.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/bullet_right.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/bullet_up.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/camp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/destory.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy1D.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy1L.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy1R.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy1U.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy2D.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy2L.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy2R.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy2U.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy3D.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy3L.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy3R.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemy3U.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/enemymissile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/fire.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/hit.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/mintank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/over.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p1tankD.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p1tankL.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p1tankR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p1tankU.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p2tankD.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p2tankL.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p2tankR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/p2tankU.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/select.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/selecttank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/shot.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/star.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/start.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/steel.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/steels.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/timer.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/title.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/wall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/walls.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/img/water.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/map/1.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/tank-war_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -162,20 +75,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="168">
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -184,28 +97,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -247,8 +141,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Grass.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/View.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Water.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/Config.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/Movable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/business/AutoShot.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Blast.kt" />
@@ -263,17 +155,19 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Tank.kt" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/model/Enemy.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/Config.kt" />
         <option value="$PROJECT_DIR$/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="292" />
+    <option name="x" value="296" />
     <option name="y" value="22" />
-    <option name="width" value="1320" />
-    <option name="height" value="992" />
+    <option name="width" value="1310" />
+    <option name="height" value="991" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -297,17 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="tank-war" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="tank-war" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,7 +200,44 @@
             </path>
             <path>
               <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tank-war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="war" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank-war" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="tank-war" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="tank-war" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -355,7 +275,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545914885174" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545971717417" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -496,7 +416,7 @@
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17987151" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18843684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -514,13 +434,13 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005353" side_tool="true" weight="0.3077778" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32996634" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3288889" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.3270878" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.3270878" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
@@ -594,13 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/Config.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -746,20 +659,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle.tmp" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/javafx-base-11.jar/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/gradle/javafx-graphics-11.jar/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/gradle/javafx-controls-11.jar/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -767,25 +669,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/javafx-base-11.jar/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/javafx-graphics-11.jar/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/javafx-controls-11.jar/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/Config.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/github/hzqd/tank/war/GameWindow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>

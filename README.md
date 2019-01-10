@@ -1,5 +1,5 @@
 # kotlin-learn-diary
-## include video, web, book, PTA and item
+## include video, web, book, PTA, Euler and item
 ### Video
 This directory includes the code which I watch the video.
 ### Web
