@@ -1,4 +1,4 @@
-//加法计算：
-fun main(args: Array<String>) {
-    readLine()!!.split(" ").map{ it.trim().toInt() }.sum().let(::println)
+﻿//加法计算：
+fun main() {
+    while (true) readLine()!!.split(" ").map { it.toLong() }.sum().let(::println)
 }
