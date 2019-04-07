@@ -8,47 +8,48 @@ import javax.crypto.spec.SecretKeySpec
 
 object AESCrypt {
     fun encrypt(input: String, passwd: String): String {
-        //1.´´½¨cipher¶ÔÏó£º
+        //1.åˆ›å»ºcipherå¯¹è±¡ï¼š
         val cipher = Cipher.getInstance("AES")
-        //2.³õÊ¼»¯cipher£º
+        //2.åˆå§‹åŒ–cipherï¼š
         cipher.init(Cipher.ENCRYPT_MODE, SecretKeySpec(passwd.toByteArray(), "AES"))
-        //3.¼ÓÃÜ£º
+        //3.åŠ å¯†ï¼š
         return Base64.getEncoder().encodeToString(cipher.doFinal(input.toByteArray()))
     }
 
     fun decrypt(input: String, passwd: String): ByteArray {
-        //1.´´½¨cipher¶ÔÏó£º
+        //1.åˆ›å»ºcipherå¯¹è±¡ï¼š
         val cipher = Cipher.getInstance("AES")
-        //2.³õÊ¼»¯cipher£º
+        //2.åˆå§‹åŒ–cipherï¼š
         cipher.init(Cipher.DECRYPT_MODE, SecretKeySpec(passwd.toByteArray(), "AES"))
-        //3.½âÃÜ£º
+        //3.è§£å¯†ï¼š
         return cipher.doFinal(Base64.getDecoder().decode(input))
     }
 }
 
 fun en() {
-    println("ÇëÊäÈëÄúÒª¼ÓÃÜµÄÄÚÈİ:")
+    println("è¯·è¾“å…¥æ‚¨è¦åŠ å¯†çš„å†…å®¹:")
     val input = readLine()!!
-    println("ÇëÄúÊäÈëÖÁÉÙ16Î»ÃÜÂë:")
+    println("è¯·æ‚¨è¾“å…¥è‡³å°‘16ä½å¯†ç :")
     val passwd = readLine()!!
     val encrypt = AESCrypt.encrypt(input, passwd)
-    println("ÇëÊäÈë¼ÓÃÜºóµÄÎÄ¼şÃû:")
+    println("è¯·è¾“å…¥åŠ å¯†åçš„æ–‡ä»¶å:")
     val br = BufferedWriter(FileWriter("${readLine()}"))
     br.write(encrypt)
     br.close()
+    println("åŠ å¯†å®Œæˆ.")
 }
 
 fun de() {
-    println("ÇëÊäÈë¸ÃÎÄ¼şÃû:")
+    println("è¯·è¾“å…¥è¯¥æ–‡ä»¶å:")
     val input = BufferedReader(FileReader("${readLine()}")).readLine()
-    println("ÇëÊäÈë½âÃÜÃÜÂë:")
+    println("è¯·è¾“å…¥è§£å¯†å¯†ç :")
     val passwd = readLine()!!
-    println("AES½âÃÜ£º" + String(AESCrypt.decrypt(input, passwd)))
+    println("AESè§£å¯†ï¼š" + String(AESCrypt.decrypt(input, passwd)))
 }
 
 fun main() {
     while (true) {
-        println("¼ÓÃÜÇëÊä1  ½âÃÜÇëÊä2")
+        println("åŠ å¯†è¯·è¾“1  è§£å¯†è¯·è¾“2")
         val mode = readLine()
         when (mode) {
             "1" -> en()
