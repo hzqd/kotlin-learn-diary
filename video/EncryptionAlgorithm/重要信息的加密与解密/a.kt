@@ -36,7 +36,7 @@ fun en() {
     val br = BufferedWriter(FileWriter("${readLine()}"))
     br.write(encrypt)
     br.close()
-    println("加密完成.")
+    println("加密完成")
 }
 
 fun de() {
@@ -44,7 +44,7 @@ fun de() {
     val input = BufferedReader(FileReader("${readLine()}")).readLine()
     println("请输入解密密码:")
     val passwd = readLine()!!
-    println("AES解密：" + String(AESCrypt.decrypt(input, passwd)))
+    println("AES解密：" + String(AESCrypt.decrypt(input, passwd)) + "\n解密完成")
 }
 
 fun main() {
