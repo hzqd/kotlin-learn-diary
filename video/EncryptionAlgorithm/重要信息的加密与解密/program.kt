@@ -25,9 +25,9 @@ fun en() {
     println("请您输入至少16位密码:")
     val passwd = readLine()!!
     println("请输入加密后的文件名:")
-    val br = BufferedWriter(FileWriter("${readLine()}"))
-    br.write(AESCrypt.encrypt(input, passwd))
-    br.close()
+    val bw = BufferedWriter(FileWriter("${readLine()}"))
+    bw.write(AESCrypt.encrypt(input, passwd))
+    bw.close()
     println("加密完成\n")
 }
 
