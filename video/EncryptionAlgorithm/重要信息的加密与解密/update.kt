@@ -51,7 +51,7 @@ fun desDE() {
     println("请输入该文件名:")
     val input = BufferedReader(FileReader(readLine())).readLine()
     println("请输入解密密码:")
-    println("AES解密：" + String(DESCrypt.decrypt(input, readLine()!!)) + "\n解密完成\n")
+    println("DES解密：" + String(DESCrypt.decrypt(input, readLine()!!)) + "\n解密完成\n")
 }
 
 object AESCrypt {
@@ -207,12 +207,22 @@ fun rsaDE() {
     when (readLine()) {
         "1" -> {
             val input = BufferedReader(FileReader("encryptByPublicKey")).readLine()
-            val privateKey = kf.generatePrivate(PKCS8EncodedKeySpec(Base64.getDecoder().decode(BufferedReader(FileReader("privateKey")).readLine())))
+            val privateKey = kf.generatePrivate(
+                PKCS8EncodedKeySpec(
+                    Base64.getDecoder()
+                        .decode(BufferedReader(FileReader("privateKey")).readLine())
+                )
+            )
             println("RSA解密：" + RSACrypt.decryptByPrivateKey(input, privateKey) + "\n解密完成\n")
         }
         "2" -> {
             val input = BufferedReader(FileReader("encryptByPrivateKey")).readLine()
-            val publicKey = kf.generatePublic(X509EncodedKeySpec(Base64.getDecoder().decode(BufferedReader(FileReader("publicKey")).readLine())))
+            val publicKey = kf.generatePublic(
+                X509EncodedKeySpec(
+                    Base64.getDecoder()
+                        .decode(BufferedReader(FileReader("publicKey")).readLine())
+                )
+            )
             println("RSA解密：" + RSACrypt.decryptByPublicKey(input, publicKey) + "\n解密完成\n")
         }
     }
