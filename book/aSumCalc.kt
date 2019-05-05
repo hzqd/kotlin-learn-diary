@@ -2,7 +2,8 @@
     while (true)
         readLine()!!
             .split(" ")
-            .filter { it.matches("[0-9]+".toRegex()) }
+            .map { it.filter { it in '0'..'9' } }
+            .filter { it.isNotEmpty() }
             .map { it.toLong() }
             .sum()
             .let(::println)
