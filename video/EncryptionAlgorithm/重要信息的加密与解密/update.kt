@@ -230,14 +230,36 @@ fun rsaDE() {
 
 fun main() {
     while (true) {
-        println("DES加密请输1,解密请输2；AES和RSA同理3456")
+        println("请选择加密算法  DES输1  AES输2  RSA输3   查看说明输4")
         when (readLine()) {
-            "1" -> desEN()
-            "2" -> desDE()
-            "3" -> aesEN()
-            "4" -> aesDE()
-            "5" -> rsaEN()
-            "6" -> rsaDE()
+            "1" -> {
+                println("加密请输1  解密请输2")
+                when (readLine()) {
+                    "1" -> desEN()
+                    "2" -> desDE()
+                }
+            }
+            "2" -> {
+                println("加密请输1  解密请输2")
+                when (readLine()) {
+                    "1" -> aesEN()
+                    "2" -> aesDE()
+                }
+            }
+            "3" -> {
+                println("加密请输1  解密请输2")
+                when (readLine()) {
+                    "1" -> rsaEN()
+                    "2" -> rsaDE()
+                }
+            }
+            "4" -> help()
         }
     }
+}
+
+fun help() {
+    """
+        |本程序
+    """.trimMargin().also(::println)
 }
