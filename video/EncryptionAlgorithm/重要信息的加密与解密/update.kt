@@ -230,24 +230,42 @@ fun rsaDE() {
 
 fun main() {
     while (true) {
-        println("请选择加密算法  DES输1  AES输2  RSA输3   查看说明输4")
+        print(
+            "\u001B[95m支持的加密算法：\n" +
+            "\u001B[36m1.\u001B[32mAES " +
+            "\u001B[36m2.\u001B[32mDES " +
+            "\u001B[36m3.\u001B[32mRSA\n" +
+            "\u001B[93m请输入需要加解密的类型 (1 ～ 3) ，退出请按Ctrl+c: "
+        )
         when (readLine()) {
             "1" -> {
-                println("加密请输1  解密请输2")
+                print(
+                    "\n" +
+                    "\u001B[36m1.\u001B[32m加密  \u001B[36m2.\u001B[32m解密\n" +
+                    "\u001B[93m请选择要加密还是解密 (1 ～ 2) : "
+                )
                 when (readLine()) {
                     "1" -> desEN()
                     "2" -> desDE()
                 }
             }
             "2" -> {
-                println("加密请输1  解密请输2")
+                print(
+                    "\n" +
+                    "\u001B[36m1.\u001B[32m加密  \u001B[36m2.\u001B[32m解密\n" +
+                    "\u001B[93m请选择要加密还是解密 (1 ～ 2) : "
+                )
                 when (readLine()) {
                     "1" -> aesEN()
                     "2" -> aesDE()
                 }
             }
             "3" -> {
-                println("加密请输1  解密请输2")
+                print(
+                    "\n" +
+                    "\u001B[36m1.\u001B[32m加密  \u001B[36m2.\u001B[32m解密\n" +
+                    "\u001B[93m请选择要加密还是解密 (1 ～ 2) : \u001B[0m"
+                )
                 when (readLine()) {
                     "1" -> rsaEN()
                     "2" -> rsaDE()
@@ -260,6 +278,6 @@ fun main() {
 
 fun help() {
     """
-        |本程序
+        |This is an easter egg.
     """.trimMargin().also(::println)
 }
