@@ -1,0 +1,5 @@
+package itcast
+
+fun main() {
+
+}
