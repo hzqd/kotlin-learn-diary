@@ -1,16 +1,16 @@
 package itcast
 
-val name: String by lazy {
+val nomo: String by lazy {
     println("初始化了")
     "conan"
 }
 
 fun main() {
-    name.let(::println)
-    name.also(::println)
+    nomo.let(::println)
+    nomo.also(::println)
 
-    name1 = "Aoko"
-    println(name1)
+    nomo1 = "Aoko"
+    println(nomo1)
 }
 
-lateinit var name1: String
+lateinit var nomo1: String

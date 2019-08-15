@@ -1,4 +1,4 @@
-package com.my.player
+package com.github.myplayer
 
 import org.junit.Test
 

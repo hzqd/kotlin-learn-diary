@@ -1,12 +1,13 @@
 package com.my.player.base
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 //所有Activity的基类
-abstract class BaseActivity : AppCompatActivity(),AnkoLogger {
+abstract class BaseActivity : AppCompatActivity(), AnkoLogger {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutID())
@@ -15,12 +16,12 @@ abstract class BaseActivity : AppCompatActivity(),AnkoLogger {
     }
 
     //初始化数据
-    protected fun initData() {
+    protected open fun initData() {
 
     }
 
     //adapter listener
-    protected fun initListener() {
+    protected open fun initListener() {
 
     }
 
@@ -29,5 +30,10 @@ abstract class BaseActivity : AppCompatActivity(),AnkoLogger {
 
     protected fun myToast(msg: String) {
         runOnUiThread { toast(msg) }
+    }
+
+    inline fun <reified T : BaseActivity> startActivityAndFinish() {
+        startActivity<T>()
+        finish()
     }
 }
