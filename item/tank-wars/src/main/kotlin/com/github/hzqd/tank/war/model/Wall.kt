@@ -25,9 +25,9 @@ class Wall(override val x: Int, override val y: Int) : Blockable, Sufferable, De
 
     override fun isDestroyed(): Boolean = blood <= 0    //砖墙生命值少于或等于零时被销毁
 
-    override fun notifySuffer(attackable: Attackable): Array<View>? {
+    override fun notifySuffer(attackable: Attackable): Array<View>? = run {
         blood -= attackable.attackPower      //砖墙掉血
         Composer.play(HIT)                   //砖墙喊疼
-        return arrayOf(Blast(x, y))
+        arrayOf(Blast(x, y))
     }
 }
