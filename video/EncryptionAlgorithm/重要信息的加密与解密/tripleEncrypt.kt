@@ -28,15 +28,8 @@ object DESCrypt {
         }
     }
 
-    fun encrypt(input: String, passwd: String) = with(input) {
-        desCrypt(passwd, "encrypt").doFinal(toByteArray()).base64Encode()
-    }
-
-    fun decrypt(input: String, passwd: String) = with(input) {
-        desCrypt(passwd, "decrypt").run {
-            String(base64Decode().let(::doFinal))
-        }
-    }
+    fun encrypt(input: String, passwd: String) = with(input) { desCrypt(passwd, "encrypt").doFinal(toByteArray()).base64Encode() }
+    fun decrypt(input: String, passwd: String) = with(input) { desCrypt(passwd, "decrypt").run{ String(base64Decode().let(::doFinal)) }}
 }
 
 object AESCrypt {
@@ -50,15 +43,8 @@ object AESCrypt {
         }
     }
 
-    fun encrypt(input: String, passwd: String) = with(input) {
-        aesCrypt(passwd, "encrypt").doFinal(toByteArray()).base64Encode()
-    }
-
-    fun decrypt(input: String, passwd: String) = with(input) {
-        aesCrypt(passwd, "decrypt").run {
-            String(base64Decode().let(::doFinal))
-        }
-    }
+    fun encrypt(input: String, passwd: String) = with(input) { aesCrypt(passwd, "encrypt").doFinal(toByteArray()).base64Encode() }
+    fun decrypt(input: String, passwd: String) = with(input) { aesCrypt(passwd, "decrypt").run{ String(base64Decode().let(::doFinal)) }}
 }
 
 object RSACrypt {
@@ -90,17 +76,10 @@ object RSACrypt {
         }
     }
 
-    fun encryptByPrivateKey(input: String, privateKey: PrivateKey) =
-        rsaCrypt(input, "encrypt", "private", privateKey).base64Encode()
-
-    fun encryptByPublicKey(input: String, publicKey: PublicKey) =
-        rsaCrypt(input, "encrypt", "public", publicKey = publicKey).base64Encode()
-
-    fun decryptByPrivateKey(input: String, privateKey: PrivateKey) =
-        String(rsaCrypt(input, "decrypt", "private", privateKey))
-
-    fun decryptByPublicKey(input: String, publicKey: PublicKey) =
-        String(rsaCrypt(input, "decrypt", "public", publicKey = publicKey))
+    fun encryptByPrivateKey(input: String, privateKey: PrivateKey) = rsaCrypt(input, "encrypt", "private", privateKey).base64Encode()
+    fun encryptByPublicKey(input:String,publicKey:PublicKey)=rsaCrypt(input,"encrypt","public",publicKey=publicKey).base64Encode()
+    fun decryptByPrivateKey(input: String, privateKey: PrivateKey) = String(rsaCrypt(input, "decrypt", "private", privateKey))
+    fun decryptByPublicKey(input: String, publicKey: PublicKey) = String(rsaCrypt(input, "decrypt", "public", publicKey = publicKey))
 }
 
 fun encrypt() {
@@ -113,12 +92,8 @@ fun encrypt() {
         KeyPairGenerator.getInstance("RSA").genKeyPair().run {
             println("公钥加密请输1 私钥加密请输2")
             when (readLine()) {
-                "1" -> FileWriter("${name}_encryptByPublicKey").apply {
-                    RSACrypt.encryptByPublicKey(it, public).let(::write)
-                }.close()
-                "2" -> FileWriter("${name}_encryptByPrivateKey").apply {
-                    RSACrypt.encryptByPrivateKey(it, private).let(::write)
-                }.close()
+                "1" -> FileWriter("${name}_encryptByPublicKey").apply { RSACrypt.encryptByPublicKey(it, public).let(::write) }.close()
+                "2" -> FileWriter("${name}_encryptByPrivateKey").apply{ RSACrypt.encryptByPrivateKey(it, private).let(::write) }.close()
             }
             FileWriter("${name}_privateKey").apply { private.encoded.base64Encode().let(::write) }.close()
             FileWriter("${name}_publicKey").apply { public.encoded.base64Encode().let(::write) }.close()
@@ -130,28 +105,25 @@ fun encrypt() {
 fun decrypt() {
     println("请输入该文件名:")
     readLine().let(::FileReader).readText().also { println("私钥解密请输1 公钥解密请输2") }.let { input ->
-        KeyFactory.getInstance("RSA").run {
-            when (readLine()) {
-                "1" -> {
-                    println("请输入私钥文件名")
-                    readLine().let(::FileReader).readText().base64Decode().let(::PKCS8EncodedKeySpec).let(::generatePrivate)
-                        .let { RSACrypt.decryptByPrivateKey(input, it) }
-                }
-                "2" -> {
-                    println("请输入公钥文件名")
-                    readLine().let(::FileReader).readText().base64Decode().let(::X509EncodedKeySpec).let(::generatePublic)
-                        .let { RSACrypt.decryptByPublicKey(input, it) }
-                }
-                else -> Unit
+        KeyFactory.getInstance("RSA").run { when (readLine()) {
+            "1" -> {
+                println("请输入私钥文件名")
+                readLine().let(::FileReader).readText().base64Decode().let(::PKCS8EncodedKeySpec).let(::generatePrivate)
+                    .let { RSACrypt.decryptByPrivateKey(input, it) }
             }
-        }
+            "2" -> {
+                println("请输入公钥文件名")
+                readLine().let(::FileReader).readText().base64Decode().let(::X509EncodedKeySpec).let(::generatePublic)
+                    .let { RSACrypt.decryptByPublicKey(input, it) }
+            }
+            else -> Unit
+        } }
     }.also { println("请输入DES的8位密码:") }.let { DESCrypt.decrypt(it as String, readLine()!!) }
         .also { println("请输入AES的16位密码:") }.let { println("三重解密：\n${AESCrypt.decrypt(it, readLine()!!)}\n解密完成\n") }
 }
 
 fun main() {
-    while (true) {
-        println("加密请输1  解密请输2")
+    while (true) { println("加密请输1  解密请输2")
         when (readLine()) {
             "1" -> encrypt()
             "2" -> decrypt()
