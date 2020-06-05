@@ -15,7 +15,6 @@ import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
 
 fun ByteArray.base64Encode() = Base64.getEncoder().encodeToString(this)
-
 fun String.base64Decode() = Base64.getDecoder().decode(this)
 
 object DESCrypt {
@@ -106,56 +105,48 @@ object RSACrypt {
 
 fun encrypt() {
     println("请输入您要加密的内容:")
-    var input = readLine()!!
+    val input = readLine()!!
     println("请输入加密后的文件名:")
     val name = readLine()!!
     println("请输入AES的16位密码:")
-    var passwd = readLine()!!
-    input = AESCrypt.encrypt(input, passwd)
-    println("请输入DES的8位密码:")
-    passwd = readLine()!!
-    input = DESCrypt.encrypt(input, passwd)
-    KeyPairGenerator.getInstance("RSA").genKeyPair().run {
-        println("公钥加密请输1 私钥加密请输2")
-        when (readLine()) {
-            "1" -> FileWriter("${name}_encryptByPublicKey").apply {
-                RSACrypt.encryptByPublicKey(input, public).let(::write)
-            }.close()
-            "2" -> FileWriter("${name}_encryptByPrivateKey").apply {
-                RSACrypt.encryptByPrivateKey(input, private).let(::write)
-            }.close()
+    AESCrypt.encrypt(input, readLine()!!).also { println("请输入DES的8位密码:") }.let { DESCrypt.encrypt(it, readLine()!!) }.let {
+        KeyPairGenerator.getInstance("RSA").genKeyPair().run {
+            println("公钥加密请输1 私钥加密请输2")
+            when (readLine()) {
+                "1" -> FileWriter("${name}_encryptByPublicKey").apply {
+                    RSACrypt.encryptByPublicKey(it, public).let(::write)
+                }.close()
+                "2" -> FileWriter("${name}_encryptByPrivateKey").apply {
+                    RSACrypt.encryptByPrivateKey(it, private).let(::write)
+                }.close()
+            }
+            FileWriter("${name}_privateKey").apply { private.encoded.base64Encode().let(::write) }.close()
+            FileWriter("${name}_publicKey").apply { public.encoded.base64Encode().let(::write) }.close()
         }
-        FileWriter("${name}_privateKey").apply { private.encoded.base64Encode().let(::write) }.close()
-        FileWriter("${name}_publicKey").apply { public.encoded.base64Encode().let(::write) }.close()
     }
     println("三重加密完成\n")
 }
 
 fun decrypt() {
     println("请输入该文件名:")
-    var input = readLine().let(::FileReader).readText()
-    println("私钥解密请输1 公钥解密请输2")
-    KeyFactory.getInstance("RSA").run {
-        when (readLine()) {
-            "1" -> {
-                println("请输入私钥文件名")
-                readLine().let(::FileReader).readText().base64Decode().let(::PKCS8EncodedKeySpec).let(::generatePrivate)
-                    .let { input = RSACrypt.decryptByPrivateKey(input, it) }
-            }
-            "2" -> {
-                println("请输入公钥文件名")
-                readLine().let(::FileReader).readText().base64Decode().let(::X509EncodedKeySpec).let(::generatePublic)
-                    .let { input = RSACrypt.decryptByPublicKey(input, it) }
+    readLine().let(::FileReader).readText().also { println("私钥解密请输1 公钥解密请输2") }.let { input ->
+        KeyFactory.getInstance("RSA").run {
+            when (readLine()) {
+                "1" -> {
+                    println("请输入私钥文件名")
+                    readLine().let(::FileReader).readText().base64Decode().let(::PKCS8EncodedKeySpec).let(::generatePrivate)
+                        .let { RSACrypt.decryptByPrivateKey(input, it) }
+                }
+                "2" -> {
+                    println("请输入公钥文件名")
+                    readLine().let(::FileReader).readText().base64Decode().let(::X509EncodedKeySpec).let(::generatePublic)
+                        .let { RSACrypt.decryptByPublicKey(input, it) }
+                }
+                else -> Unit
             }
         }
-    }
-    println("请输入DES的8位密码:")
-    var passwd = readLine()!!
-    input = DESCrypt.decrypt(input, passwd)
-    println("请输入AES的16位密码:")
-    passwd = readLine()!!
-    input = AESCrypt.decrypt(input, passwd)
-    println("三重解密：\n${input}\n解密完成\n")
+    }.also { println("请输入DES的8位密码:") }.let { DESCrypt.decrypt(it as String, readLine()!!) }
+        .also { println("请输入AES的16位密码:") }.let { println("三重解密：\n${AESCrypt.decrypt(it, readLine()!!)}\n解密完成\n") }
 }
 
 fun main() {
