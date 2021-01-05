@@ -62,20 +62,28 @@ object AESCrypt {
     }
 }
 
+sealed class Option<out T>
+data class Some<out T>(val v: T) : Option<T>()
+object None : Option<Nothing>()
+
+enum class Crypto {
+    Encrypt, Decrypt
+}
+
 object RSACrypt {
     private fun rsaCrypt(
-        input: String, mode: String, type: String, privateKey: PrivateKey? = null, publicKey: PublicKey? = null
+        input: String, mode: Crypto, privateKey: Option<PrivateKey> = None, publicKey: Option<PublicKey> = None,
     ) = run {
         var offset = 0
         var tmp: ByteArray
-        (if (mode == "encrypt") 117 else 256).let {
+        (if (mode == Crypto.Encrypt) 117 else 256).let {
             with(Cipher.getInstance("RSA")) {
                 init(
-                    if (mode == "encrypt") Cipher.ENCRYPT_MODE else Cipher.DECRYPT_MODE,
-                    if (type == "private") privateKey else publicKey
+                    if (mode == Crypto.Encrypt) Cipher.ENCRYPT_MODE else Cipher.DECRYPT_MODE,
+                    if (privateKey is Some) privateKey.v else (publicKey as Some).v
                 )
                 with(ByteArrayOutputStream()) {
-                    (if (mode == "encrypt") input.toByteArray() else input.base64Decode()).run {
+                    (if (mode == Crypto.Encrypt) input.toByteArray() else input.base64Decode()).run {
                         while (size - offset > 0) {
                             if (size - offset >= it) {
                                 tmp = doFinal(this, offset, it)
@@ -95,16 +103,16 @@ object RSACrypt {
     }
 
     fun encryptByPrivateKey(input: String, privateKey: PrivateKey) =
-        rsaCrypt(input, "encrypt", "private", privateKey).base64Encode()
+        rsaCrypt(input, Crypto.Encrypt, Some(privateKey)).base64Encode()
 
     fun encryptByPublicKey(input: String, publicKey: PublicKey) =
-        rsaCrypt(input, "encrypt", "public", publicKey = publicKey).base64Encode()
+        rsaCrypt(input, Crypto.Encrypt, publicKey = Some(publicKey)).base64Encode()
 
     fun decryptByPrivateKey(input: String, privateKey: PrivateKey) =
-        String(rsaCrypt(input, "decrypt", "private", privateKey))
+        String(rsaCrypt(input, Crypto.Decrypt, Some(privateKey)))
 
     fun decryptByPublicKey(input: String, publicKey: PublicKey) =
-        String(rsaCrypt(input, "decrypt", "public", publicKey = publicKey))
+        String(rsaCrypt(input, Crypto.Decrypt, publicKey = Some(publicKey)))
 }
 
 fun encrypt() {
